@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo" width="60px" >
+        </div>
+        <h1>
+            OnlySongs
+        </h1>
+    </header>
+
+    <!-- search pop up window here -->
+    <div class="search-popup">
+        <div class="search-popup-container">
+            <div class="search-popup-header">
+                <h2>Add Songs</h2>
+                <button class="close-button">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="search-popup-body">
+                <input type="text" placeholder="Search for songs">
+            </div>
+            <div class="search-result-container">
+                <div class="search-result song-list-item">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="song-container">
+            <h2>Song List</h2>
+            <div class="song-list">
+            </div>
+            <!-- add a plus button  -->
+            <button class="add-song">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+    
+        <div class="now-playing-container">
+            <h2>Now Playing</h2>
+
+            <div class="now-playing">
+                <div class="now-playing-image">
+                    <img src="" alt="">
+                </div>
+                <div class="now-playing-toolbox">
+                    <div class="now-playing-details">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                    <div class="now-playing-controls">
+                        <button class="play-button">
+                            <i class="fa-solid fa-circle-play"></i>
+                        </button>
+                        <button class="pause-button">
+                            <i class="fa-solid fa-circle-pause"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

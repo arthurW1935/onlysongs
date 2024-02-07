@@ -52,7 +52,7 @@ async function generateAccessToken(){
     }
     
     localStorage.setItem('access_token', token);
-    window.history.replaceState({}, document.title, "/main.html");
+    window.history.replaceState({}, document.title, "onlysongs/main.html");
     return token;
 }
  

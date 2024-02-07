@@ -7,13 +7,13 @@ async function generateAccessToken(){
 
     // console.log(1);
     const clientId = 'abd347443ecd45e29093fbdd39992028';
-    const redirectUri = 'http://localhost:5500/main.html';
+    const redirectUri = 'https://arthurw1935.github.io/onlysongs/main.html';
     const url = 'https://accounts.spotify.com/api/token';
     const urlParams = new URLSearchParams(window.location.search);
     let code = urlParams.get('code');
 
     if(code==null){
-        window.location.href = 'http://localhost:5500/index.html';
+        window.location.href = 'https://arthurw1935.github.io/onlysongs/index.html';
         return;
     }
     const getToken = async code => {

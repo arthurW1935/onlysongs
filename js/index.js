@@ -30,7 +30,7 @@ async function generateAuthToken(clientId, clientSecret){
       
     const hashed = await sha256(codeVerifier);
     const codeChallenge = base64encode(hashed);
-    const redirectUri = 'http://localhost:5500/main.html';
+    const redirectUri = 'https://arthurw1935.github.io/onlysongs/main.html';
     
     const scope = 'streaming user-read-playback-state user-modify-playback-state user-read-currently-playing';
     const authUrl = new URL("https://accounts.spotify.com/authorize")
